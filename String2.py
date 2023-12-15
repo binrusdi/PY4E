@@ -42,3 +42,11 @@ print(domba.format(10)) # kami punya         10 domba
 makan = 'setiap pagi saya harus makan {:^8} 1 porsi'
 # simpan ditengah dengan jarak karakter kanan kiri 8
 print(makan.format('ayam')) # setiap pagi saya harus makan   ayam   1 porsi
+
+suhu = 'suhu di bandung sekarang antara {:+} dan {:+} celcius'
+# menambahkan tanda minus atau plus
+print(suhu.format(-7, 20))
+
+suhu2 = 'suhu di pangalengan tidak menentu {:-} atau {:-} celcius'
+# menambhakan karakter minus jika nilai minus, jika positif tidak ditampilkan apa2
+print(suhu2.format(-1, 20))
