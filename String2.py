@@ -19,8 +19,8 @@ print(resultEncode) # b'rusdiana'
 resultEndswith = word.endswith('a') # apakah akhir string ada 'a'
 print(resultEndswith) # True
 
-words = 'rus\tdiana'
-resultExpandtabs = words.expandtabs(3) # jarak tab pada string
+teksExpantabs = 'rus\tdiana'
+resultExpandtabs = teksExpantabs.expandtabs(3) # jarak tab pada string
 print(resultExpandtabs) # rus   diana
 
 teksFind = 'welcome mr'
@@ -50,3 +50,19 @@ print(suhu.format(-7, 20))
 suhu2 = 'suhu di pangalengan tidak menentu {:-} atau {:-} celcius'
 # menambhakan karakter minus jika nilai minus, jika positif tidak ditampilkan apa2
 print(suhu2.format(-1, 20))
+
+teksIsalnum = 'company12'
+resultIsalnum = teksIsalnum.isalnum() # memeriksa alphabet dan numerik
+print(resultIsalnum) # True
+
+teksIsalpha = 'ini bukan murni alp4bet'
+resultIsalpha = teksIsalpha.isalpha()
+print(resultIsalpha) # False
+
+teksIsdigit = '2013'
+resultIsdigit = teksIsdigit.isdigit() # memeriksa string adalah angka(digit)
+print(resultIsdigit) # True
+
+teksIslower = 'dian'
+resultIslower = teksIslower.islower() # memeriksa apakah steing huruf kecil semua
+print(resultIslower) # True
