@@ -64,5 +64,21 @@ resultIsdigit = teksIsdigit.isdigit() # memeriksa string adalah angka(digit)
 print(resultIsdigit) # True
 
 teksIslower = 'dian'
-resultIslower = teksIslower.islower() # memeriksa apakah steing huruf kecil semua
+resultIslower = teksIslower.islower() # memeriksa apakah string huruf kecil semua
 print(resultIslower) # True
+
+teksIsnumeric = '23456'
+resultIsnumeric = teksIsnumeric.isnumeric() # mencocokan apakah string berisi numerik
+print(resultIsnumeric) # True
+
+teksIsprintable = 'kamu mau\tkemana'
+resultIsprintable = teksIsprintable.isprintable() # mencari tahu apakah string ini bisa dicetak
+print(resultIsprintable) # False, karna '\t' tidak bisa dicetak
+
+teksIsspace = ' '
+resultIsspace = teksIsspace.isspace() # apakah variable hanya ada space saja
+print(resultIsspace) # True
+
+teksIstitle = 'Helo, Rusdiana'
+resultIstitle = teksIstitle.istitle() # memeriksa apakah setiap kata diawali huruf besar
+print(resultIstitle) # True
