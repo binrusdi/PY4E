@@ -82,3 +82,17 @@ print(resultIsspace) # True
 teksIstitle = 'Helo, Rusdiana'
 resultIstitle = teksIstitle.istitle() # memeriksa apakah setiap kata diawali huruf besar
 print(resultIstitle) # True
+
+teksUpper = 'Nama dian'
+resultUpper = teksUpper.isupper() # apakah semua string huruf besar
+print(resultUpper) # False
+
+teksJoin = ('kelinci', 'saya', 'berwarna', 'merah')
+resultJoin = '->'.join(teksJoin)
+# gabungkan semua item dalam tuple menjadi string dengan pemisah.
+print(resultJoin) # kelinci->saya->berwarna->merah
+# Catatan: Saat menggunakan kamus sebagai iterable, nilai yang dikembalikan adalah kuncinya, bukan nilainya.
+
+teksLstrip = '      kamu...'
+resultLstrip = teksLstrip.lstrip()
+print('apakah', resultLstrip)
