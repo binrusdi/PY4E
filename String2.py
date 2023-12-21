@@ -93,6 +93,34 @@ resultJoin = '->'.join(teksJoin)
 print(resultJoin) # kelinci->saya->berwarna->merah
 # Catatan: Saat menggunakan kamus sebagai iterable, nilai yang dikembalikan adalah kuncinya, bukan nilainya.
 
+teksLjust = 'banana'
+resultLjust = teksLjust.ljust(20)
+# menambahkan string banana menjadi 20 karakter dan string di tempatkan dikiri.
+print(resultLjust, 'is fruit fav')
+
 teksLstrip = '      kamu...'
 resultLstrip = teksLstrip.lstrip()
 print('apakah', resultLstrip)
+
+teksPartition = 'saya makan salad'
+resultPartition = teksPartition.partition('makan')
+# mencari string yang di tentukan dan membagi string dalam tiga bagian tuple.
+# pertama sebelum string yang ditentuka
+# kedua string yang ditentukan
+# ketiga setelah string yang di tentukan
+print(resultPartition) # ('saya', 'makan', 'salad')
+
+teksSplit = 'welcome to the jungle'
+resultSplit = teksSplit.split()
+# memisahkan string menjadi list dari setiap kata
+print(resultSplit) # ['welcome', 'to', 'the', 'jungle']
+
+teksSplitLine = 'welcome to the\n jungle'
+resultSplitLine = teksSplitLine.splitlines()
+# membagi sebuah string menjadi list, pemisahnya adalah \n
+print(resultSplitLine) # ['welcom to the', 'jungle']
+
+teksStartWith = 'hi, nama saya dian'
+resultStartWith = teksStartWith.startswith('hi')
+# mengembalikan True jika string dimulai dengan nilai yang ditentukan, jika tidak, False.
+print(resultStartWith) # True
