@@ -100,6 +100,7 @@ print(resultLjust, 'is fruit fav')
 
 teksLstrip = '      kamu...'
 resultLstrip = teksLstrip.lstrip()
+# Mengembalikan string yang dipangkas kiri
 print('apakah', resultLstrip)
 
 teksPartition = 'saya makan salad'
@@ -124,3 +125,33 @@ teksStartWith = 'hi, nama saya dian'
 resultStartWith = teksStartWith.startswith('hi')
 # mengembalikan True jika string dimulai dengan nilai yang ditentukan, jika tidak, False.
 print(resultStartWith) # True
+
+teksStrip = '   banana   '
+resultStrip = teksStrip.strip()
+# menghapus spasi kiri kanan diantara string
+print(resultStrip) # banana
+
+teksSwapCase = 'hALLO nAMA SAYA rUSDIANA'
+resultSwapCase = teksSwapCase.swapcase()
+# membalikan huruf kecil ke kapital, kapital ke kecil
+print(resultSwapCase) # Hallo Nama saya Rusdiana
+
+teksTitle = 'nama saya rusdiana'
+resultTitle = teksTitle.title()
+# huruf pertama setiap kata menjadi huruf besar
+print(resultTitle) # Nama Saya Rusdiana
+
+teksZfill = 'RUSDIANA'
+resultZfill = teksZfill.zfill(10)
+# menambahkan 0 di awal string sampai panjang karakter yang ditentukan
+print(resultZfill) # 00RUSDIANA
+
+
+
+
+
+
+
+
+
+
