@@ -45,3 +45,79 @@ if 'pulpen' in listBarang:
 fruit = ['apple', 'mango', 'watermelon']
 fruit[1] = 'pinaple'
 print(fruit)
+
+# Menyisipkan item dengan index yang ditentukan
+list_insert = ['angga', 'asep', 'teguh']
+list_insert.insert(0, 'muhammad')
+print(list_insert) # ['muhammad', 'angga', 'asep', 'teguh']
+
+# Menambahkan item di akhir list
+list_append = ['suzuki', 'honda']
+list_append.append('datsun')
+print(list_append) # ['suzuki', 'honda', 'datsun']
+
+# Menambahkan list lain ke list saat ini
+list_1 = ['honda', 'suzuki']
+list_2 = ['yaris', 'apv']
+list_1.extend(list_2)
+print(list_1) # ['honda', 'suzuki', 'yaris', 'apv']
+
+# Hapus item tertentu pada list
+list_remove = ['a', 'b', 'c']
+list_remove.remove('a')
+print(list_remove) # ['b', 'c']
+
+# Hapus item yang ditentukan oleh index
+list_pop = [1, 2, 3]
+# list_pop.pop()
+# jika parameter dikosongkan, pop menghapus item terakhir pada list
+list_pop.pop(0)
+print(list_pop) # [2, 3]
+
+# Menghapus item yang di tentukan atau list sepenuhnya
+list_del = [2, 3, 4]
+del list_del[0]
+print(list_del) # [3, 4]
+
+list_del_non_parameter = [5, 6 , 7]
+del list_del_non_parameter
+
+# Membersihkan item list
+list_clear = [6, 7, 8]
+list_clear.clear()
+print(list_clear) # []
+
+# Iterasi list
+list_loop = ['satu', 'dua', 'tiga']
+for angka_list in list_loop:
+  print(angka_list)
+# satu
+# dua
+# tiga
+
+# Iterasi list hanya no indexnya
+list_index_loop = ['empat', 'lima', 'enam']
+for index in range(len(list_index_loop)):
+  print(index)
+# 0
+# 1
+# 2
+
+# Iterasi index dan item pada list
+list_print_i_n = ['nol', 'satu', 'dua']
+for i in range(len(list_print_i_n)):
+    print(i, list_print_i_n[i])
+# 0 nol
+# 1 satu
+# 2 dua
+
+# Iterasi sementara
+list_while = ['ayah', 'ibu', 'ihsan']
+i = 0
+while i < len(list_while):
+  print(list_while[i])
+  i += 1
+
+
+
+
