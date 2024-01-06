@@ -118,6 +118,26 @@ while i < len(list_while):
   print(list_while[i])
   i += 1
 
+# Pemahaman List
+# newlist = [expresion for item in iterable if condition == True]
+fruits = ['apple', 'melon', 'stawberry']
+new_fruits = [x for x in fruits if 'a' in x]
+# mengambil hanya buah yang memiliki nama 'a' saja yang di ambil (filter)
+print(new_fruits)
 
+# Tidak menggunakan pemahaman list
+mobil = ['yaris', 'alpart', 'jimmny']
+new_mobil = []
 
+for x in mobil:
+    if 'a' in x:
+      new_mobil.append(x)
+
+print(new_mobil)
+
+# Memanipulasi dengan pemahaman list
+karyawan = ['angga', 'asep', 'teguh']
+new_karyawan = [x if x != 'teguh' else 'asep' for x in karyawan]
+# kembalikan nama karyawan jika bukan teguh, jika teguh kembalikan asep
+print(new_karyawan)
 
