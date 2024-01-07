@@ -141,3 +141,32 @@ new_karyawan = [x if x != 'teguh' else 'asep' for x in karyawan]
 # kembalikan nama karyawan jika bukan teguh, jika teguh kembalikan asep
 print(new_karyawan)
 
+# Urutkan list sesuai alfanumerik
+mylist = ['apel', 'mangga', 'chery']
+mylist.sort()
+print(mylist) # ['apel', 'chery', 'mangga']
+
+# Urutkan list secara menurun
+list_angka = [20, 50, 200, 1000]
+list_angka.sort(reverse=True)
+print(list_angka) # [1000, 200, 50, 20]
+
+# Urutkan list sesuai fungsi anda sendiri
+def myfunc(n):
+   return abs(n-50)
+angka_angka = [100, 50, 65, 82, 23]
+angka_angka.sort(key = myfunc)
+print(angka_angka) # [50, 65, 23, 82, 100]
+
+'''
+sort(), metode ini secara default peka huruf besar dan kecil. Sehingga huruf besar diurutkan sebelum huruf kecil
+'''
+# Cara mengakalai default metode sort()
+mobil_kecil = ['datsun', 'Alpart', 'Lamborgini']
+mobil_kecil.sort(key=str.lower) # mengabaikan huruf besar/kecil
+print(mobil_kecil) # ['Alpart', 'datsun', 'Lamborgini']
+
+# Membalikan ururtan list
+list_terbalik = ['Hayate', 'Minerva', 'Skywave']
+list_terbalik.reverse()
+print(list_terbalik) # ['Skywave', 'Minerva', 'Hayate']
