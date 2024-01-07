@@ -170,3 +170,32 @@ print(mobil_kecil) # ['Alpart', 'datsun', 'Lamborgini']
 list_terbalik = ['Hayate', 'Minerva', 'Skywave']
 list_terbalik.reverse()
 print(list_terbalik) # ['Skywave', 'Minerva', 'Hayate']
+
+# Menyalin List
+pakaian = ['celana', 'baju', 'topi']
+pakaian_disalin = pakaian.copy()
+print(pakaian_disalin)
+
+salin_with_list = list(pakaian_disalin)
+print(salin_with_list)
+
+# Menggabungkan List
+list_1 = ['satu', 'dua', 'tiga']
+list_2 = [1, 2, 3]
+
+# pertama, dengan operator +
+list_3 = list_1 + list_2
+print(list_3)
+# ['satu', 'dua', 'tiga', 1, 2, 3]
+
+# kedua, dengan iterasi. memasukan setiap item list 2 ke list 1
+for x in list_2:
+  list_1.append(x)
+print(list_1)
+# ['satu', 'dua', 'tiga', 1, 2, 3]
+
+# ketiga, menggunakan extend
+list_satu = ['baju', 'celana']
+list_dua = [1, 2]
+list_satu.extend(list_dua)
+print(list_satu)
