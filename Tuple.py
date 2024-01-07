@@ -10,3 +10,11 @@ print(type(my_tuple)) # <class 'tuple'>
 # membuat tuple dengan konstruktornya
 tupleku = tuple(('rusd', 'diana'))
 print(tupleku, type(tupleku))
+
+# Cek jumlah item pada tuple
+panjang_tuple = ('saya', 'kamu', 'mereka')
+print(len(panjang_tuple)) # 3
+
+# Akses item pada tuple
+akses_item = ('ceo', 'manager', 'presdir')
+print(akses_item[0])
