@@ -25,3 +25,30 @@ dihapus itemnya
 '''
 # Solusinya yaitu mengkonversi dulu ke List baru ke tuplekan lagi
 
+# Extrak Tuple
+fruits = ('apple', 'cherry', 'banana')
+(buah1, buah2, buah3) = fruits
+print(buah1) # apple
+print(buah2) # cherry
+print(buah3) # banana
+
+# Extrak Tuple dengan tanda *
+color = ('merah', 'kuning', 'hijau', 'biru')
+(warna1, *warna2) = color
+print(warna1) # merah
+print(*warna2) # kuning, hijau, biru
+
+# Iterasi Tuple
+umbi = ('kacang', 'kentang', 'lobak')
+for item in umbi:
+    print(item, end=',') # kacang,kentang,lobak,
+
+print('\n')
+
+for i in range(len(umbi)):
+    print(i, umbi[i])
+
+item = 0
+while item < len(umbi):
+    print(umbi[item])
+    item = item + 1
