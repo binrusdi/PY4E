@@ -18,3 +18,10 @@ print(len(panjang_tuple)) # 3
 # Akses item pada tuple
 akses_item = ('ceo', 'manager', 'presdir')
 print(akses_item[0])
+
+'''
+Tuple tidak dapat diubah, yang artinya tidak dapat diubah, ditambah, atau
+dihapus itemnya
+'''
+# Solusinya yaitu mengkonversi dulu ke List baru ke tuplekan lagi
+
