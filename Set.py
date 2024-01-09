@@ -36,3 +36,7 @@ print(set_tiga) # {1, 2, 3, 'tiga', 'dua', 'satu'}
 # Simpan hanya duplikatnya
 # metode intersection-update() <- hanya akan menyimpan item yang ada di kedua set
 # metode intersection() <- mengembalikan kumpulan baru, yg hanya berisi item pada ke dua set
+
+# Simpan semua, tapi bukan duplikatnya
+# symmetric_difference_update() <- hanya akan menyimpan yang tidak ada dikedua set
+# symmetric_difference() <- mengembalikan himpunan baru, yang hanya berisi elemen yang TIDAK ada di kedua himpunan.
