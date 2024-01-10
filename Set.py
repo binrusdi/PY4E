@@ -40,3 +40,17 @@ print(set_tiga) # {1, 2, 3, 'tiga', 'dua', 'satu'}
 # Simpan semua, tapi bukan duplikatnya
 # symmetric_difference_update() <- hanya akan menyimpan yang tidak ada dikedua set
 # symmetric_difference() <- mengembalikan himpunan baru, yang hanya berisi elemen yang TIDAK ada di kedua himpunan.
+
+# Mengembalikan True jika di kedua set tidak ada yang sama
+set_mobil = {'propeler', 'balljoin', '4wd'}
+set_motor = {'rantai', 'crankshaft', 'gear'}
+set_not_item = set_mobil.isdisjoint(set_motor)
+print(set_not_item) # True
+
+# Mengembalikan True jika semua item dalam set A ada di set B
+x = {'a', 'b', 'c'}
+y = {'b', 'a', 'c', 's'}
+z = x.issubset(y)
+print(z) # True
+
+# atau menggunakan issuperset()
