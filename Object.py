@@ -28,4 +28,10 @@ class Student(Person):
     super().__init__(name, age)
     # menambahkan prop dikelas anak
     # value prop harus berupa variable yang diteruskan melalui parameter init
-      self.gradution_year = year
+    self.gradution_year = year
+  # ini adalah metode
+  def salam(self):
+    print('selamat datang', self.name, 'ditahun ajaran', self.gradution_year)
+siswa = Student('Ihsan', 2, 2022)
+print(siswa.gradution_year)
+siswa.salam()
