@@ -80,3 +80,63 @@ print(motor)
 # {'tahun': 2017}
 # del juga dapat menghapus dict sepenuhnya
 # clear() mengkosongkan dict
+
+# Iterasi dict
+# key
+my_dict = {
+  'nama': 'Rusdiana',
+  'umur': 29,
+  'status': 'Menikah'
+}
+for dic in my_dict:
+  print(dic)
+
+# value
+for di in my_dict:
+  print(my_dict[di])
+
+# metode values
+for value in my_dict.values():
+  print(value)
+
+# metode key
+for key in my_dict.keys():
+  print(key)
+
+# metode items
+for item_key, item_value in my_dict.items():
+  print(item_key, item_value)
+  
+# Mengalin dict
+my_dict_2 = my_dict.copy()
+print(my_dict_2)
+
+my_dict_3 = dict(my_dict)
+print(my_dict_3)
+
+# Menyarangkan dict
+my_family = {
+  'child1' : {
+    'name' : 'Ihsan',
+    'age' : 1.9
+  },
+  'child2' : {
+    'name' : 'aftar',
+    'age' : 1.11
+  }
+}
+
+child3 = {
+  'nama' : 'maulida',
+  'age': 5
+}
+child4 = {
+  'nama' : 'ihsan',
+  'age': 2
+}
+
+my_child = {
+  'child3' : child3,
+  'child4' : child4
+}
+print(my_child)
