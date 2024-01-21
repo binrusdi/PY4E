@@ -31,3 +31,11 @@ print(garing)  # ['7', '5']
 teks_titik = "kamu sangat cantik"
 titik = re.findall("ca..ik", teks_titik)
 print(titik)
+
+# ^ <- dimulai dengan
+teks_dimulai_dengan = "Apakah kamu sangat butuh"
+dimulai_dengan = re.findall("^Apakah", teks_dimulai_dengan)
+if dimulai_dengan:
+    print("Ya, teks itu ada")
+else:
+    print("not found")
